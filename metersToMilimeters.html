@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONVERTING FROM METRES (M) TO Millimeters (MM)</title>
+         <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Style-CSS --> 
+<link rel="stylesheet" href="css/main.css" type="text/css" media="all" /> 
+<!-- Font-Awesome-Icons-CSS -->
+<link rel="stylesheet" href="css/font-awesome.css"> 
+<link rel="stylesheet" href="css/swipebox.css">
+<link rel="stylesheet" href="css/jquery-ui.css" />
+</head>
+    <body>
+        
+        <center>
+            <div style="color:white;font-weight:bold">CONVERTING FROM METRES (M) TO Millimeters (MM)</div>
+            <div class="shadow p-3 mb-5 bg-dark rounded" style="width:80%; margin-top:80px; background-color: #4a304d; padding:45px" >      
+                
+        
+        
+      <label for="meters" style="color: white;"><input type='number' name="first" placeholder="Enter meters" border-style='ridge' id="meters" class="units"> m</label> <br><br>
+      <label for="millimeters" style="color: white;"> <input type='value' name="second" placeholder="Output Millimeters" border-style='ridge' id="millimeters" class="units"> mm</label> <br><br>
+        <button class="btn btn-success" onclick="answer()">Answer</button>
+             
+            </div>
+           
+        </center>
+         <script>
+             function answer(){
+
+var x=document.getElementById('meters').value;
+var y;   //millimeters
+y = parseFloat(x) * (1000);
+var y=document.getElementById('millimeters').value=(y);
+}
+         </script> 
+        
+    </body>
+</html>

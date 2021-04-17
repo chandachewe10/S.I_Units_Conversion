@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kilometers to Meters Conversion</title>
+         <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+         <!-- Style-CSS --> 
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!-- Font-Awesome-Icons-CSS -->
+<link rel="stylesheet" href="css/font-awesome.css"> 
+<link rel="stylesheet" href="css/swipebox.css">
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<!-- CSS -->
+<link rel="stylesheet" href="css/main.css" />
+</head>
+    <body>
+       
+        
+        <center>
+          
+            <div style="color:white;font-weight:bold">CONVERTING FROM KILOMETRES (KM) TO Meters (M)</div>
+           
+            
+           <div class="shadow p-3 mb-5 bg-dark rounded" style="width:80%; margin-top:80px; background-color: #4a304d; padding:45px" >      
+        
+        
+      <label for="Kilometers" style="color:white"><input type='number' name="first" placeholder="Enter kilometers" border-style='ridge' id="kilometers" class="units">km</label> <br><br>
+       <label for="Meters" style="color:white"><input type='value' name="second" placeholder="Output Meters" border-style='ridge' id="meters" class="units"> m</label> <br><br>
+        <button class="btn btn-success" onclick="answer()">Answer</button>
+              
+            
+            </div>
+             
+        </center>
+         <script>
+             function answer(){
+
+var x=document.getElementById('kilometers').value;
+var y;   //meters
+y = parseFloat(x) * (1000);
+var a=document.getElementById('meters').value=(y);
+}
+         </script> 
+        
+    </body>
+</html>
